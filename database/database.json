@@ -1,0 +1,50 @@
+[
+  {
+    "COD_GRUPO": 10,
+    "DESC": "MEDICAMENTO",
+    "PRODUTOS": [
+      {
+        "COD_PRODUTO": 3596,
+        "DESC": "PREDNISOLONA 20mg 10 COMPRIMIDOS REVESTIDOS",
+        "REG_ANVISA": "245178945",
+        "FL_CONTROLADO": 0
+      },
+      {
+        "COD_PRODUTO": 44860,
+        "DESC": "DICOXIBE 30mg 10 CAPSULAS",
+        "REG_ANVISA": "097965108",
+        "FL_CONTROLADO": 0
+      },
+      {
+        "COD_PRODUTO": 918,
+        "DESC": "TYLEX 3mg 20 COMPRIMIDOS REVESTIDOS",
+        "REG_ANVISA": "118500832",
+        "FL_CONTROLADO": 1
+      }
+    ]
+  },
+  {
+    "COD_GRUPO": 20,
+    "DESC": "OTC",
+    "PRODUTOS": [
+      {
+        "COD_PRODUTO": 887512,
+        "DESC": "DORFLEX 1mg 20 COMPRIMIDOS",
+        "REG_ANVISA": "971005432",
+        "FL_CONTROLADO": 0
+      }
+    ]
+  },
+  {
+    "COD_GRUPO": 30,
+    "DESC": "PERFUMARIA",
+    "PRODUTOS": [
+      {
+        "COD_PRODUTO": 10978,
+        "DESC": "SHAMPOO CLEAR 200ml",
+        "REG_ANVISA": "001254006",
+        "FL_CONTROLADO": 0
+      }
+    ]
+  }
+]
