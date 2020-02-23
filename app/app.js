@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+//
+app.use(express.json());
+
 // Incluindo Roteadores
 const GruposRoutes = require("./routes/GruposRoutes");
 const ProdutosRoutes = require("./routes/ProdutosRoutes");
