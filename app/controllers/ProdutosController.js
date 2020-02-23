@@ -79,4 +79,28 @@ function update(req, res) {
   return res.send({ msg: "ok", error: 0 });
 }
 
-module.exports = { index, store, update };
+function destroy(req, res) {
+  // Capturando o codigo do produto
+  let codigo = req.params.codigo;
+
+  // Encontrando qual o grupo que o contém atualmente
+  let posProduto = null;
+  let grupo = grupos.find(g => {
+    posProduto = g.PRODUTOS.findIndex(p => p.COD_PRODUTO == codigo);
+    return posProduto > -1;
+  });
+
+  // Verificando se algum grupo realmente contém um
+  // produto com esse codigo
+  if (!grupo) {
+    return res.status(404).send({ msg: "Produto não encontrado", error: 1 });
+  }
+
+  // Removendo o produto do grupo
+  grupo.PRODUTOS.splice(posProduto, 1);
+
+  // retornando resposta para o visitante
+  return res.send({ msg: "ok", error: 0 });
+}
+
+module.exports = { index, store, update, destroy };
