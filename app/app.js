@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+// Autorizando cors pra geral
+app.use(cors())
+
 //
 app.use(express.json());
 
