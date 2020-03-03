@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors")
 const app = express();
+const path = require("path");
 
 // Autorizando cors pra geral
 app.use(cors())
@@ -14,7 +15,7 @@ const ProdutosRoutes = require("./routes/ProdutosRoutes");
 
 // Definindo uma rota raíz
 app.get('/', (req, res) => {
-	res.sendFile("./index.html");
+	res.sendFile(path.resolve(__dirname, "./index.html"));
 });
 
 // Usando rotas
