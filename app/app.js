@@ -11,5 +11,8 @@ const ProdutosRoutes = require("./routes/ProdutosRoutes");
 app.use("/grupos", GruposRoutes);
 app.use("/produtos", ProdutosRoutes);
 
+// Definindo a porta
+const PORT = Number(process.env.PORT) || 3000;
+
 // Levantando o servidor
-app.listen(3000);
+app.listen(PORT);
