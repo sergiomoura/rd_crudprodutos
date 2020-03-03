@@ -11,6 +11,12 @@ app.use(express.json());
 // Incluindo Roteadores
 const GruposRoutes = require("./routes/GruposRoutes");
 const ProdutosRoutes = require("./routes/ProdutosRoutes");
+
+// Definindo uma rota raíz
+app.get('/', (req, res) => {
+	res.sendFile("./index.html");
+});
+
 // Usando rotas
 app.use("/grupos", GruposRoutes);
 app.use("/produtos", ProdutosRoutes);
